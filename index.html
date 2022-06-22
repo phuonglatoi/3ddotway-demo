@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effects</title>
+    <!-- vue.min.js link -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="3dway.css">
+</head>
+<body>
+    </div>
+    <div id="container">
+    <div class="camera -x">
+        <div class="camera -y">
+            <div class="camera -z">
+                <div class="sea">
+                    <!-- 1 to 100 -->
+                    <!-- create new var d with items: delay -30ms -->
+                    <div class="wave"  v-for="item in 100" :style="{'--d': item*-30 +'ms'}">
+                        <div class="counter -z">
+                            <div class="counter -y">
+                                <div class="counter -x">
+                                    <div class="ball"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el: '#container',
+        data: {}
+    })
+</script>
